@@ -17,18 +17,18 @@ class CreateUsersSeeder extends Seeder
         $user = [
             [
                 'name' => 'User',
-                'username' => 'auzahinzo',
-                'email' => 'auzahinzo@gmail.com',
-                'password' => bcrypt('auzahinzo'),
-                'photo' => 'image.png',
+                'username' => 'User',
+                'email' => 'user@mail.com',
+                'password' => bcrypt('12345'),
+                'photo' => 'user.png',
                 'roles_id' => 2
             ],
             [
                 'name' => 'Admin',
-                'username' => 'mfarhan_20',
-                'email' => 'mf180053@gmail.com',
-                'password' => bcrypt('farhan123'),
-                'photo' => 'images.png',
+                'username' => 'lutfi-123',
+                'email' => 'admin@mail.com',
+                'password' => bcrypt('12345'),
+                'photo' => 'admin.png',
                 'roles_id' => 1
             ]
         ];

@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Akun User/Admin')
+@section('title', 'User/Admin Account')
 
 @section('content_header')
-<h1 class="text-center text-bold">AKUN USER DAN ADMIN</h1>
+<h1 class="text-center text-bold">USER AND ADMIN ACCOUNT</h1>
 @stop
 @section('content')
 <div class="container">
@@ -11,11 +11,11 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    {{ __('Akun User dan Admin Setting') }}
+                    {{ __('USER AND ADMIN ACCOUNT Setting') }}
 
                 </div>
                 <div class="card-body">
-                    <but class="btn btn-primary float-left mr-3" data-toggle="modal" data-target="#modalTambahUser"><i class="fa fa-plus"></i> MENAMBAHKAN AKUN</but>
+                    <but class="btn btn-primary float-left mr-3" data-toggle="modal" data-target="#modalTambahUser"><i class="fa fa-plus"></i> ADD ACCOUNT</but>
                     <div class="btn-group mb-5" role="group" aria-label="Basis Example">
                     </div>
                     <table id="table-data" class="table table-borderer display nowrap" style="width:100%">
@@ -68,7 +68,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Akun User/Admin</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add Date Account User/Admin</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -79,17 +79,17 @@
                     <div class="container-fluid">
                         <div class="row">
                             <div class="form-group .col-md-6 mr-5">
-                                <label for="name">Nama</label>
+                                <label for="name">Name Account</label>
                                 <input type="text" placeholder="Masukan Nama" class="form-control" name="name" id="name" required />
                             </div>
                             <div class="form-group .col-md-6 .ml-auto">
-                                <label for="username">Username</label>
+                                <label for="username">Username Account</label>
                                 <input type="text" placeholder="Masukan username" class="form-control" name="username" id="username" required />
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="email">Email</label>
+                        <label for="email">Email Account</label>
                         <input type="text" class="form-control" placeholder="Masukan Email" name="email" id="email" required />
                     </div>
                     <div class="form-group">
@@ -97,7 +97,7 @@
                         <input min="1" type="password" class="form-control" placeholder="Masukan password" name="password" id="password" required />
                     </div>
                     <div class="form-group">
-                        <label for="roles_id">Jabatan/Role
+                        <label for="roles_id">Status
                         <Role></Role></label>
                         <div class="input-group">
                             <select class="custom-select" name="roles_id" placeholder="Masukan role anda" id="roles_id" aria-label="Example select with button addon">

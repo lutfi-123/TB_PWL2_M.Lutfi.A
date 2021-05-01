@@ -45,8 +45,8 @@ return [
     |
     */
 //Buat Logo login
-    'logo' => '<b>Auza Mobile Store</b>',
-    'logo_img' => 'vendor/adminlte/dist/img/mobilestore1.jpg',
+    'logo' => '<b>MLA Merdeka Store</b>',
+    'logo_img' => 'vendor/adminlte/dist/img/download.png',
     'logo_img_class' => 'brand-image img-circle elevation-3',
     'logo_img_xl' => null,
     'logo_img_xl_class' => 'brand-image-xs',
@@ -126,9 +126,9 @@ return [
     'classes_content_wrapper' => '',
     'classes_content_header' => '',
     'classes_content' => '',
-    'classes_sidebar' => 'sidebar-dark-white elevation-4',
+    'classes_sidebar' => 'sidebar-primary-dark elevation-4',
     'classes_sidebar_nav' => '',
-    'classes_topnav' => 'navbar-primary navbar-light',
+    'classes_topnav' => 'navbar-orange navbar-light',
     'classes_topnav_nav' => 'navbar-expand',
     'classes_topnav_container' => 'container',
 
@@ -236,25 +236,25 @@ return [
             'can' => 'isAdmin',
         ],
         [
-            'text'        => 'Akun User dan Admin',
+            'text'        => 'User',
             'url'         => 'admin/akun_user_admin',
             'icon'        => 'fas fa-users-cog',
             'can' => 'isAdmin',
         ],
         [
-            'text'        => 'Pengelolaan Produk',
+            'text'        => 'Product',
             'url'         => 'admin/pengelolaan_produk',
             'icon'        => 'fab fa-dropbox',
             'can' => 'isAdmin',
         ],
         [
-            'text'        => 'Kategori Produk',
+            'text'        => 'category',
             'url'         => 'admin/kategori_produk',
             'icon'        => 'fas fa-fw fa-folder-open',
             'can' => 'isAdmin',
         ],
         [
-            'text'        => 'Merek Produk',
+            'text'        => 'Brands',
             'url'         => 'admin/merek_produk',
             'icon'        => 'fas fa-clipboard-list',
             'can' => 'isAdmin',
@@ -277,77 +277,8 @@ return [
             ],
         ],
 
-        [
-            'text'        => 'Book',
-            'url'         => 'admin/books',
-            'icon'        => 'fas fa-fw fa-book',
-            'can'         => 'isAdmin',
-        ],
-        ['header' => 'account_settings'],
-        [
-            'text' => 'profile',
-            'url'  => 'profile',
-            'icon' => 'fas fa-fw fa-user',
-        ],
-        [
-            'text' => 'change_password',
-            'url'  => 'profile',
-            'icon' => 'fas fa-fw fa-lock',
-        ],
-        // [
-        //     'text'    => 'multilevel',
-        //     'icon'    => 'fas fa-fw fa-share',
-        //     'submenu' => [
-        //         [
-        //             'text' => 'level_one',
-        //             'url'  => '#',
-        //         ],
-        //         [
-        //             'text'    => 'level_one',
-        //             'url'     => '#',
-        //             'submenu' => [
-        //                 [
-        //                     'text' => 'level_two',
-        //                     'url'  => '#',
-        //                 ],
-        //                 [
-        //                     'text'    => 'level_two',
-        //                     'url'     => '#',
-        //                     'submenu' => [
-        //                         [
-        //                             'text' => 'level_three',
-        //                             'url'  => '#',
-        //                         ],
-        //                         [
-        //                             'text' => 'level_three',
-        //                             'url'  => '#',
-        //                         ],
-        //                     ],
-        //                 ],
-        //             ],
-        //         ],
-        //         [
-        //             'text' => 'level_one',
-        //             'url'  => '#',
-        //         ],
-        //     ],
-        // ],
-        // ['header' => 'labels'],
-        // [
-        //     'text'       => 'important',
-        //     'icon_color' => 'red',
-        //     'url'        => '#',
-        // ],
-        // [
-        //     'text'       => 'warning',
-        //     'icon_color' => 'yellow',
-        //     'url'        => '#',
-        // ],
-        // [
-        //     'text'       => 'information',
-        //     'icon_color' => 'cyan',
-        //     'url'        => '#',
-        // ],
+        
+        
     ],
 
     /*

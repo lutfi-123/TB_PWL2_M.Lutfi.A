@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Kategori Produk')
+@section('title', 'category Product')
 
 @section('content_header')
-<h1 class="text-center text-bold">KATEGORI PRODUK</h1>
+<h1 class="text-center text-bold">CATEGORY PRODUCT</h1>
 @stop
 @section('content')
 <div class="container">
@@ -11,11 +11,11 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    {{ __('Kategori Produk Setting') }}
+                    {{ __('Category Product Setting') }}
 
                 </div>
                 <div class="card-body">
-                    <button class="btn btn-primary float-left mr-3" data-toggle="modal" data-target="#modalTambahData"><i class="fa fa-plus"></i> MENAMBAHKAN KATEGORI</button>
+                    <button class="btn btn-primary float-left mr-3" data-toggle="modal" data-target="#modalTambahData"><i class="fa fa-plus"></i> ADD CATEGORY</button>
 
                     <div class="btn-group mb-5" role="group" aria-label="Basis Example">
 
@@ -59,7 +59,7 @@
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Tambah Data Kategori Produk</h5>
+                <h5 class="modal-title" id="exampleModalLabel">Add Date Category Product</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -68,17 +68,17 @@
                 <form method="post" action="{{ route('admin.kategori.submit') }}" enctype="multipart/form-data">
                     @csrf
                     <div class="form-group">
-                        <label for="name">Nama Kategori Produk</label>
+                        <label for="name">Name Category Product</label>
                         <input type="text" class="form-control" placeholder="Masukan kategori Produk" name="name" id="name" required />
                     </div>
                     <div class="form-group">
-                        <label for="description">Keterangan Produk</label>
+                        <label for="description">Keterangan Product</label>
                         <textarea class="form-control" aria-label="With textarea" placeholder="Masukan keterangan kategori" name="description" id="description" required></textarea>
                     </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
-                <button type="submit" class="btn btn-primary">Tambah</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="submit" class="btn btn-primary">Add</button>
                 </form>
             </div>
         </div>

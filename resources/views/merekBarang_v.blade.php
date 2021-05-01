@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Merek Produk')
+@section('title', 'Name Product')
 
 @section('content_header')
-<h1 class="text-center text-bold">Merek Produk</h1>
+<h1 class="text-center text-bold">Name Product</h1>
 @stop
 
 @section('content')
@@ -12,11 +12,11 @@
         <div class="col-md-12">
             <div class="card">
                 <div class="card-header">
-                    {{ __('Merek Produk Setting') }}
+                    {{ __('Name Product Setting') }}
 
                 </div>
                 <div class="card-body">
-                    <button class="btn btn-primary float-left mr-3" data-toggle="modal" data-target="#modalTambah"><i class="fa fa-plus"></i> MENAMBAHKAN MEREK PRODUK</button>
+                    <button class="btn btn-primary float-left mr-3" data-toggle="modal" data-target="#modalTambah"><i class="fa fa-plus"></i> ADD NAME PRODUCT</button>
 
                     <div class="btn-group mb-5" role="group" aria-label="Basis Example">
 
@@ -25,7 +25,7 @@
                         <thead>
                             <tr>
                                 <th>NO</th>
-                                <th>NAMA MEREK PRODUK</th>
+                                <th>NAME PRODUCT</th>
                                 <th>KETERANGAN</th>
                                 <th>ACTION</th>
 

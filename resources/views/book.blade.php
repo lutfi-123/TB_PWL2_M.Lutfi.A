@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Book PAGE')
+@section('title', 'Book STORE')
 
 @section('content_header')
-<h1>BOOK PAGE</h1>
+<h1>BOOK STORE</h1>
 @stop
 
 @section('content')
